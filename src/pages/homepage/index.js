@@ -9,7 +9,7 @@ export default function Homepage() {
   return (
     <>
 
- <NavBar />
+<NavBar/>
  <HeaderSection/>
 <WhyMerrySection/>
 <CardSection/>

@@ -3,9 +3,9 @@ import { GoHeartFill } from "react-icons/go";
 export default function WhyMerrySection() {
   return (
     <>
-    <section className="flex flex-col lg:flex-row items-center justify-center gap-8 ">
+    <section className="flex flex-col lg:flex-row items-center justify-center gap-8  ">
   {/* Left Content */}
-  <div className="max-w-lg text-white p-6 lg:p-8">
+  <article className="max-w-lg text-white p-6 lg:p-8">
     <h1 className="text-3xl lg:text-4xl font-extrabold text-second-300 mb-6">
       Why Merry Match?
     </h1>
@@ -21,10 +21,10 @@ export default function WhyMerrySection() {
       This site allows you to make your own dating profile, discover new people,
       save favorite profiles, and let them know that you’re interested.
     </p>
-  </div>
+  </article>
 
   {/* Right Content */}
-  <div className="relative flex flex-col md:flex-row lg:flex-col items-center md:items-start space-y-6 md:space-y-0 md:space-x-6 lg:space-x-0">
+  <figure className="relative flex flex-col md:flex-row lg:flex-col items-center md:items-start space-y-6 md:space-y-0 md:space-x-6 lg:space-x-0">
     {/* Box 1 */}
     <div className=" flex items-center justify-between w-[16rem] h-[5rem] md:w-[18rem] md:h-[6rem] rounded-lg bg-pink-600">
       <div className="flex items-center px-4">
@@ -54,7 +54,7 @@ export default function WhyMerrySection() {
         {/* Optional Image */}
       </div>
     </div>
-  </div>
+  </figure>
 </section>
 
 
