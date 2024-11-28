@@ -4,7 +4,7 @@ export default function StartMacthing() {
   
   return (
     <>
-<section className="flex items-center justify-center container mx-auto lg:mb-10 lg:px-16">
+<section className="flex items-center justify-center container bg-second-900   mx-auto lg:pb-10 lg:px-16">
   <div className="max-w-5xl w-full lg:rounded-badge bg-gradient-to-r from-primary-600 via-utility-third to-purple-500 p-8 lg:p-20 overflow-hidden pb-28 lg-pb-0 relative text-center">
     
     {/* Decorative Heart - Big (อยู่ข้างหลัง h2) */}

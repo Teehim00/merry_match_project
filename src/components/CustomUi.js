@@ -20,9 +20,56 @@ export function CustomButton({
   );
 }
 
-export function CardImage({ children, className = "h-72 w-48" }) {
+export function CardImage({ children, className = "h-72 w-52" }) {
   const customClass =
-    `overflow-hidden rounded-full bg-red-500 ${className}`.trim();
+    `overflow-hidden rounded-full  ${className}`.trim();
 
   return <div className={customClass}>{children}</div>;
 }
+
+
+
+
+
+export function ChatBubble({ children, type = "sender", className = "" }) {
+  // กำหนด style ให้ตำแหน่ง chat
+  const positionChat = {
+    senderChat: {
+      borderTopRightRadius: '2rem',
+      borderBottomRightRadius: '2rem',
+      borderTopLeftRadius: '2.2rem',
+      borderBottomLeftRadius: '0rem',
+    },
+    receiverChat: {
+      borderTopRightRadius: '2.2rem',
+      borderBottomRightRadius: '0rem',
+      borderTopLeftRadius: '2rem',
+      borderBottomLeftRadius: '2rem',
+    },
+  };
+
+  const customClass =`pt-3 pl-6 pb-3 pr-6 px-6 text-center w-fit ${className}`
+
+  // เลือก style ตาม type
+  const chatStyle =
+    type === "sender"
+      ? positionChat.senderChat
+      : type === "receiver"
+      ? positionChat.receiverChat
+      : {};
+
+  return (
+    <div className="text-center">
+      <div
+        className={customClass}
+        style={chatStyle}
+      >
+        <p>{children}</p>
+      </div>
+    </div>
+  );
+}
+
+
+
+

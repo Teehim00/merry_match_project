@@ -30,7 +30,7 @@ export default function CardSection() {
     <>
 
 {/* renderlists */}
-<div class=" text-white p-6 lg:p-0 lg:py-24">
+<div class=" text-white  bg-second-900 p-6 lg:p-0 lg:py-24">
   <h2 class="text-center text-3xl font-bold text-second-300 mb-8">How to Merry</h2>
   <figure className="flex flex-col container mx-auto lg:flex-row lg:justify-center lg:gap-5 items-center space-y-6 lg:space-y-0">
   {steps.map((step, index) => (

@@ -3,7 +3,7 @@ import { GoHeartFill } from "react-icons/go";
 export default function WhyMerrySection() {
   return (
     <>
-    <section className="flex flex-col lg:flex-row items-center justify-center gap-8  ">
+    <section className="flex bg-second-900  flex-col lg:flex-row items-center justify-center gap-8  ">
   {/* Left Content */}
   <article className="max-w-lg text-white p-6 lg:p-8">
     <h1 className="text-3xl lg:text-4xl font-extrabold text-second-300 mb-6">
